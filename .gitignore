@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Env
+.env
+
+# Node
+node_modules/
+dist/
+build/
+
+# Vite
+student-portal/node_modules/
+student-portal/dist/
+
+# OS
+.DS_Store
+Thumbs.

@@ -17,8 +17,8 @@ const Login = () => {
     setError("")
 
     const url = isRegister
-      ? "http://localhost:8000/api/register/"
-      : "http://localhost:8000/api/login/"
+      ? "http://student-portal-mlp.onrender.com/api/register/"
+      : "http://student-portal-mlp.onrender.com/api/login/"
 
     const payload = isRegister
       ? { username, email, password, phone, stream }

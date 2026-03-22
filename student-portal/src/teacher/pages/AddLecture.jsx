@@ -20,7 +20,7 @@ export default function AddLecture() {
 
   // load class structure
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/class/1/")
+    fetch("http://student-portal-mlp.onrender.com/api/class/1/")
       .then(res => res.json())
       .then(data => {
         setClasses([data])
@@ -44,7 +44,7 @@ export default function AddLecture() {
     }
 
     const res = await fetch(
-      "http://127.0.0.1:8000/api/lecture/create/",
+      "http://student-portal-mlp.onrender.com/api/lecture/create/",
       {
         method: "POST",
         headers: {

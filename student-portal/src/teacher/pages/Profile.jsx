@@ -17,7 +17,7 @@ export default function TeacherProfile() {
 
   // load teacher profile
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/profile/", {
+    fetch("http://student-portal-mlp.onrender.com/api/profile/", {
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -28,7 +28,7 @@ export default function TeacherProfile() {
 
   // load teacher uploads
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/materials/", {
+    fetch("http://student-portal-mlp.onrender.com/api/materials/", {
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -56,7 +56,7 @@ export default function TeacherProfile() {
   const handleChangePassword = async () => {
 
   const res = await fetch(
-    "http://127.0.0.1:8000/api/change-password/",
+    "http://student-portal-mlp.onrender.com/api/change-password/",
     {
       method: "POST",
       headers: {

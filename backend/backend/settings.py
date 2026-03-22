@@ -94,9 +94,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # allow frontend requests
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "https://student-portal-mlp.vercel.app",
+]
+
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.onrender.com",
-    "https://*.vercel.app",
+    "https://student-portal-mlp.vercel.app",
+    "https://student-portal-mlp.onrender.com",
 ]
 
 

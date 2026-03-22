@@ -26,7 +26,7 @@ export default function Dashboard() {
      ✅ FETCH DATA FROM BACKEND
   ------------------------------------------------------------------- */
   useEffect(() => {
-    fetch(`http://student-portal-mlp.onrender.com/api/class/${classId}/`)
+    fetch(`https://student-portal-mlp.onrender.com/api/class/${classId}/`)
       .then((res) => res.json())
       .then((data) => {
         setClassData(data);
@@ -53,7 +53,7 @@ export default function Dashboard() {
 
 // load materials for selected class / stream / subject
   fetch(
-    `http://student-portal-mlp.onrender.com/api/materials/?class=${classId}&stream=${selectedStreamId}&subject=${selectedSubjectId}`,
+    `https://student-portal-mlp.onrender.com/api/materials/?class=${classId}&stream=${selectedStreamId}&subject=${selectedSubjectId}`,
     {
       headers: {
         Authorization: `Token ${token}`,

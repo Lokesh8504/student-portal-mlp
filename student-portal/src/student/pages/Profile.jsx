@@ -8,7 +8,7 @@ const Profile = () => {
   useEffect(() => {
     const token = localStorage.getItem("token")
 
-    fetch("http://student-portal-mlp.onrender.com/api/profile/", {
+    fetch("https://student-portal-mlp.onrender.com/api/profile/", {
       headers: {
         Authorization: `Token ${token}`,
       },

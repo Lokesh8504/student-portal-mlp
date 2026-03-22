@@ -14,7 +14,7 @@ export default function MyUploads() {
   // fetch materials
   useEffect(() => {
 
-    fetch("http://student-portal-mlp.onrender.com/api/materials/", {
+    fetch("https://student-portal-mlp.onrender.com/api/materials/", {
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -25,7 +25,7 @@ export default function MyUploads() {
 
 
     // fetch lectures
-    fetch("http://student-portal-mlp.onrender.com/api/lecture/list/", {
+    fetch("https://student-portal-mlp.onrender.com/api/lecture/list/", {
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -45,7 +45,7 @@ export default function MyUploads() {
     if (!confirmDelete) return
 
     await fetch(
-      `http://student-portal-mlp.onrender.com/api/materials/${id}/`,
+      `https://student-portal-mlp.onrender.com/api/materials/${id}/`,
       {
         method: "DELETE",
         headers: {
@@ -67,7 +67,7 @@ export default function MyUploads() {
     if (!confirmDelete) return
 
     await fetch(
-      `http://student-portal-mlp.onrender.com/api/lecture/delete/${id}/`,
+      `https://student-portal-mlp.onrender.com/api/lecture/delete/${id}/`,
       {
         method: "DELETE",
         headers: {

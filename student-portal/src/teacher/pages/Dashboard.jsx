@@ -17,7 +17,7 @@ export default function TeacherDashboard() {
 
   // load teacher uploads
   useEffect(() => {
-    fetch("http://student-portal-mlp.onrender.com/api/materials/", {
+    fetch("https://student-portal-mlp.onrender.com/api/materials/", {
       headers: {
         Authorization: `Token ${token}`,
       },
